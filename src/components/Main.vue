@@ -620,7 +620,7 @@ export default {
     showMap();
     $("#sortable").sortable();
     $("#sortable").disableSelection();
-    d3.json('/lda_visualizations/visualizationPathsByCountry.json').then(visPathsByCountry => {
+    d3.json('/g20TopicMap/visualizationPathsByCountry.json').then(visPathsByCountry => {
       let countryKeys = Object.keys(visPathsByCountry);
       countryKeys.forEach(country => {
         this.ldaElsByCountry[country] = [];

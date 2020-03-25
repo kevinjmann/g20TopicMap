@@ -4,7 +4,7 @@ export const loadAndProcessData = () =>
 
         Promise.all([
             d3.json('https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json'),
-            d3.json('/countryTopics.json')
+            d3.json('/g20TopicMap/countryTopics.json')
             // d3.tsv('https://unpkg.com/world-atlas@1.1.4/world/110m.tsv')
         ])
         .then(([topoData, countryTopics]) => {
