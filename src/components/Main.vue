@@ -638,7 +638,7 @@ export default {
           tmpIframe.setAttribute("scrolling", "no");
           tmpIframe.setAttribute("frameborder", "0");
           tmpIframe.setAttribute("class", "lda-vis");
-          tmpIframe.setAttribute("src", ldaPath);
+          tmpIframe.setAttribute("src", '/g20TopicMap/'+ldaPath);
           tmpDivInner.appendChild(tmpIframe);
           tmpDivCard.appendChild(tmpDivInner);
           tmpDivOuter.appendChild(tmpDivCard);
