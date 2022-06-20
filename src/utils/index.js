@@ -7,7 +7,7 @@ const height = parseFloat(svg.attr('height'));
 const width = parseFloat(svg.attr('width'));
 const sensitivity = 75;
 const velocity = 0.015;
-const topicLifeTimer = 200;
+const topicLifeTimer = 400;
 const minTopicDistance = 50;
 const projection0 = d3.geoOrthographic().scale(height/2)
                       .translate([width/2,height/2])
